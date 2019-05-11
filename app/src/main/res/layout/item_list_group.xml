@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/itemListGroupFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_2"
+        android:background="@drawable/bg_icon_group"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCourse"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_5"
+            android:src="@drawable/ic_launcher_background" />
+
+
+        <TextView
+            android:id="@+id/title_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="20"
+            android:text="@string/connection_in_java"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconStatus"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_5"
+        android:src="@drawable/grop_ip_black" />
+</FrameLayout>

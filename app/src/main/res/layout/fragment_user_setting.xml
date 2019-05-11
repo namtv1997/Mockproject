@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bg_actionbar"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="@dimen/dp_8"
+        android:background="#F4436D">
+
+        <FrameLayout
+            android:id="@+id/frameChangeAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvtSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+            <ImageButton
+                android:id="@+id/imgChangeAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|bottom"
+                android:visibility="gone"
+                android:src="@drawable/picture_24" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frameName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frameChangeAvatar">
+        <EditText
+            android:id="@+id/edtNameSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAvtSetting"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/pham_xuan_sang"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAvtSetting">
+            <EditText
+                android:id="@+id/edtFamilyName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:gravity="right"
+                android:visibility="gone"
+                android:hint="Family Name..."
+                android:inputType="text"
+                android:lines="1" />
+            <EditText
+                android:id="@+id/edtGivenName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:hint="GivenName..."
+                android:lines="1"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ip_call_black"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <EditText
+                android:id="@+id/edtNumberTelephone"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:layout_weight="6.5"
+                android:maxLength="10"
+                android:text="0169420142542"
+                android:enabled="false"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@mipmap/gmail_72"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <TextView
+                android:id="@+id/emailProfile"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="6.5"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ip_skype"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <EditText
+                android:id="@+id/edtSkypeSet"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:text="KimDungKieu@Skype.com"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:id="@+id/linelButtonOKCancel"
+            android:layout_height="@dimen/dp_50">
+
+            <Button
+                android:id="@+id/btnChangeProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_button"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="1"
+                android:text="Change Profile" />
+
+            <Button
+                android:id="@+id/btnOKSet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_button"
+                android:layout_marginRight="@dimen/dp_4"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:text="OK" />
+            <Button
+                android:id="@+id/btnCancelSet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_button"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

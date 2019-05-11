@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue_hope">#0081FF</color>
+    <color name="white">#F2F2F2</color>
+    <color name="black">#000</color>
+    <color name="blue_white">#A9D3FA</color>
+    <color name="start_blue_color">#22B9D3</color>
+    <color name="end_blue_color">#180043</color>
+    <color name="white_mo">#dcf8f8f8</color>
+    <color name="red">#ff2020</color>
+    <color name="violet">#d4e11d82</color>
+    <color name="xanh_nhat_tron_suot">#922196F3</color>
+
+</resources>

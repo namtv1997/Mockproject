@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_hope"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".loginScreen.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/blue_hope"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/logoNTQ"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4">
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progresbarCircle"
+            android:elevation="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:SpinKit_Color="@color/white"
+            style="@style/SpinKitView.Large.FadingCircle"
+            android:layout_gravity="center|top"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_vector" />
+    </FrameLayout>
+
+
+</LinearLayout>

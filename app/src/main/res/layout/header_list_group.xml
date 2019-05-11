@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipe_group"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    app:leftEdgeSwipeOffset="@dimen/dp_0"
+    app:rightEdgeSwipeOffset="@dimen/dp_0">
+
+    <LinearLayout
+        android:id="@+id/layout_swipe_group_right"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_60"
+            android:background="@color/xanh_nhat_tron_suot"
+            android:padding="@dimen/dp_20"
+            android:src="@drawable/content_ip" />
+
+        <ImageView
+            android:id="@+id/btnDleteContent"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_60"
+            android:background="#BEFF0000"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:src="@drawable/delete_ip"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@drawable/bg_bg_actionbar"
+        android:orientation="horizontal"
+        android:id="@+id/header_list_group">
+
+        <TextView
+            android:id="@+id/tvAvtGroup"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_circle_icon"
+            android:gravity="center"
+            android:text="@string/a"
+            android:textColor="@color/blue_hope"
+            android:textSize="@dimen/sp_30" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:layout_margin="@dimen/dp_10"
+                android:gravity="center|left"
+                android:text="@string/vietNamVoiDich"
+                android:id="@+id/titleGroup"
+                android:layout_weight="8.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/imvShowDetailGroup"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/up_icon_ip"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

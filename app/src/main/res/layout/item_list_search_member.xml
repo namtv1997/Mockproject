@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:background="@drawable/bg_bg_10dp"
+    android:id="@+id/itemListMemberSearch">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imvAvtSearchMember"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60" />
+    <TextView
+        android:id="@+id/tvNameSearchMember"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/bg_stroke_hope"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:text="Pham Xuan Sang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Sprint5.CreateEventScreen.view.CreateEventFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/blue_hope"
+            android:gravity="center"
+            android:text="@string/edit_event"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTittleEditEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="@string/titleEvent"
+            android:padding="@dimen/dp_5" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_titleEditEvent_empty"
+                style="@style/tv_error_create_content"
+                android:text="@string/tv_error_title_create_content" />
+
+            <TextView
+                android:id="@+id/tv_over_quantity_EditEvent"
+                style="@style/tv_error_create_content"
+                android:text="@string/tv_error_title_too_create_content" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edtDescriptionEditEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="top"
+            android:hint="@string/some_thing_about_your_event"
+            android:lines="2"
+            android:padding="@dimen/dp_5" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_description_empty_EditEvent"
+                style="@style/tv_error_create_content"
+                android:text="@string/event_is_require" />
+
+            <TextView
+                android:id="@+id/tv_over_quantity_description_EditEvent"
+                style="@style/tv_error_create_content"
+                android:text="@string/DescriptionOver255Character" />
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/edtDocumentLinkEditEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="@string/document_link"
+            android:inputType="textUri"
+            android:padding="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/tv_documentlink_EditEvent_empty"
+            style="@style/tv_error_create_content"
+            android:text="@string/document_link_is_require" />
+
+        <EditText
+            android:id="@+id/edtSpeakerEditEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="@string/speaker"
+            android:padding="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/tv_speaker_empty"
+            style="@style/tv_error_create_content"
+            android:text="@string/speaker_is_require" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvStartTimeEditEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_stroke_hope"
+                android:gravity="center_vertical"
+                android:hint="@string/start_time"
+                android:layout_marginRight="@dimen/dp_8"
+                android:padding="@dimen/dp_5" />
+
+            <TextView
+                android:id="@+id/tvEndTimeEditEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_stroke_hope"
+                android:hint="@string/end_time"
+                android:padding="@dimen/dp_5" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_startTime_EditEvent_empty"
+                style="@style/tv_error_create_content"
+                android:text="@string/start_time_is_require" />
+
+            <TextView
+                android:id="@+id/tv_endTime_EditEvent_empty"
+                style="@style/tv_error_create_content"
+                android:text="@string/end_time_is_require" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelEditEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveEditEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@color/blue_hope"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

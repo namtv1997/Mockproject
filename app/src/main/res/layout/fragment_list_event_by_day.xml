@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sprint5.ListEventByDay"
+    android:orientation="vertical">
+    <TextView
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/bg_stroke_hope"
+        android:gravity="center"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="2019/01/21"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/dp_5"
+        android:id="@+id/listEventByDayRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

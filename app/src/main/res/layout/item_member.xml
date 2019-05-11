@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeSetCap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rightEdgeSwipeOffset="@dimen/dp_0"
+    app:leftEdgeSwipeOffset="@dimen/dp_0">
+
+    <LinearLayout
+        android:id="@+id/layout_swipe_right_member"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:padding="@dimen/dp_10"
+            android:id="@+id/btnSetCaptain"
+            android:background="#922196F3"
+            android:src="@drawable/icon_captain"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/delete_ip"
+            android:id="@+id/btnRemoveMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BEFF0000"
+            android:visibility="gone"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemListMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarMemberLM"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="@dimen/dp_8"
+            android:src="@mipmap/gmail_72"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/avatarMemberLM"
+            android:padding="@dimen/dp_4"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tvNameMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="#FFBC57"
+                android:text="Tran Quy Phuong"/>
+            <ImageView
+                android:id="@+id/imgLevelMemberLM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvNameMember"
+                android:layout_alignBottom="@+id/tvNameMember"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:src="@mipmap/star_24"/>
+
+            <TextView
+                android:id="@+id/tv_gmail"
+                style="@style/gmail_skype_textview_style"
+                android:layout_below="@id/tvNameMember"
+                android:text="Gmail:"/>
+            <TextView
+                android:id="@+id/tvGmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_gmail"
+                android:layout_below="@id/tvNameMember"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="phuong.tran.intern@ntq-solution.com.vn"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

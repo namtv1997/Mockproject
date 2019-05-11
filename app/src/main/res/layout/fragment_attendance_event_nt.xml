@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sprint5.AttendanceEventNT.AttendanceEventNTFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclergetAttendanceEvent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEE" />
+
+    <Button
+        android:id="@+id/btn_done_attendance_event"
+        style="@style/btn_done_create_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="@string/submit" />
+
+</LinearLayout>

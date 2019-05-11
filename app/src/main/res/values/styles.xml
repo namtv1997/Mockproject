@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="text_italic_bold_white">
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="linearlayout_create_content">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+    <style name="edt_title_create_content">
+        <item name="android:inputType">text</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_background_textview_create_content</item>
+        <item name="android:padding">@dimen/dp_8</item>
+    </style>
+    <style name="tv_date_create_content">
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_background_textview_create_content</item>
+        <item name="android:padding">@dimen/dp_8</item>
+    </style>
+    <style name="tv_error_create_content">
+        <item name="android:visibility">gone</item>
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#f20</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+    </style>
+    <style name="edt_description_create_content">
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">8</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+    </style>
+    <style name="edt_comment_attendance_event">
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+    </style>
+    <style name="btn_cancel_create_content">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/shape_background_textview_create_content</item>
+    </style>
+    <style name="btn_done_create_content">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/shape_background_btn_done_content</item>
+    </style>
+    <style name="gmail_skype_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>]
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_toRightOf">@+id/avatarMemberLM</item>
+    </style>
+    <style name="join_date_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_toRightOf">@+id/avatarMemberLM</item>
+    </style>
+
+    <style name="style_date_time_edit_event">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/dp_5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_stroke_hope</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:drawableRight">@mipmap/time_24</item>
+    </style>
+</resources>

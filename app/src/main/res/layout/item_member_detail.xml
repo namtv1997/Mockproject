@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_weight="1"
+        android:background="#F4436D"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvAvtMember"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pham_xuan_sang"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abc_ntq_solution_com_vn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/calendar"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <TextView
+                android:id="@+id/joinDateGroupUser"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:text="@string/_24_01_2019"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ip_call_black"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <TextView
+                android:id="@+id/phoneUser"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:text="01694201425"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ip_skype"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+            <TextView
+                android:id="@+id/skypeUser"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:text="KimDungKieu@Skype.com"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dialog.DescriptionGroupDialogFragment">
+
+    <EditText
+        android:id="@+id/edtdescriptionGroup"
+        android:textColor="@color/black"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancelDescription"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnEditDescription"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_hope"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

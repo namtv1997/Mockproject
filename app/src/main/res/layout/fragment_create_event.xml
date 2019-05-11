@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Sprint5.createEventScreen.view.CreateEventFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/blue_hope"
+            android:gravity="center"
+            android:text="@string/create_event"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edtTittleEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="@string/titleEvent"
+            android:padding="@dimen/dp_5"
+            android:inputType="text"
+            android:autofillHints="@string/titleEvent"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/edtDescriptionEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="top"
+            android:hint="@string/some_thing_about_your_event"
+            android:lines="2"
+            android:padding="@dimen/dp_5"
+            android:inputType="text"
+            android:autofillHints="@string/some_thing_about_your_event" />
+
+        <EditText
+            android:id="@+id/edtDocumentLinkEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="@string/document_link"
+            android:padding="@dimen/dp_5"
+            android:autofillHints="@string/document_link"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:hint="Speaker..."
+            android:padding="@dimen/dp_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvStartTimeCreateEvent"
+                android:hint="@string/start_time"
+                style="@style/style_date_time_edit_event" />
+
+            <TextView
+                android:id="@+id/tvEndTimeCreateEvent"
+                android:hint="@string/end_date"
+                style="@style/style_date_time_edit_event" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelCreateEvent"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnAddCreateEvent"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue_hope"
+                android:text="@string/text_add_event"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

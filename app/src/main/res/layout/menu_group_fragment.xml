@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:id="@+id/viewBell"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+
+            android:id="@+id/tv_amountRequestJoin"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_red_circle"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="@string/four"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/btnBell"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icons8_notification" />
+    </FrameLayout>
+    <FrameLayout
+
+        android:id="@+id/viewBellcontent"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+
+            android:id="@+id/tv_amountRequestPending"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_red_circle"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="@string/four"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/btnBellcontent"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_contentt"
+         />
+    </FrameLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <ImageView
+            android:padding="@dimen/dp_5"
+            android:id="@+id/btnListContent"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="37dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="3"
+            android:src="@drawable/iconpen" />
+
+        <ImageView
+            android:padding="@dimen/dp_5"
+            android:id="@+id/btnDescription"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/icon_menu" />
+        <ImageView
+            android:id="@+id/btnSetting"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icons8_settings1" />
+        <ImageView
+            android:padding="@dimen/dp_5"
+            android:id="@+id/btnCalendar"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="3"
+            android:src="@drawable/calendar" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Sprint5.calendarScreen.view.CalendarFragment">
+
+        <TextView
+            android:id="@+id/tvCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="bottom"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_30"
+            android:textStyle="bold" />
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_margin="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:compactCalendarBackgroundColor="@color/blue_hope"
+            app:compactCalendarCurrentDayBackgroundColor="#F8D497"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#A9D3FA"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextColor="#ffffff"
+            app:compactCalendarTextSize="@dimen/sp_18" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/text_add_event"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleListEvent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@drawable/bg_stroke_hope"
+            android:padding="@dimen/dp_5" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btnHistoryEvent"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/icons8_h"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50" />
+</FrameLayout>

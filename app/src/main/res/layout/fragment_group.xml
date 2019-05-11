@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tech"
+        android:orientation="vertical"
+        tools:context=".GroupFragment.GroupFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:clickable="false"
+                android:id="@+id/imgBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:visibility="visible"
+                    android:clickable="false"
+                    android:id="@+id/imgAvartarCourse"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/titleGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:enabled="false"
+                    android:text="AndroidProTeam1"
+                    android:textColor="#2196F3"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btnEditCourse"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_35"
+                    android:background="@drawable/iconpen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/viewBell"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_40">
+
+                        <TextView
+
+                            android:id="@+id/tv_amountRequestJoin"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_gravity="right|bottom"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@drawable/bg_red_circle"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:text="@string/four"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/btnBell"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/icons8_notification" />
+                    </FrameLayout>
+
+                    <FrameLayout
+
+                        android:id="@+id/viewBellcontent"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_40">
+
+                        <TextView
+
+                            android:id="@+id/tv_amountRequestPending"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_gravity="right|bottom"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@drawable/bg_red_circle"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:text="@string/four"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/btnBellcontent"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/icon_contentt" />
+                    </FrameLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <ImageView
+                            android:id="@+id/btnListContent"
+                            android:layout_width="0dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_weight="3"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/iconpen" />
+
+                        <ImageView
+                            android:id="@+id/btnDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_weight="3"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/icon_menu" />
+
+
+                        <ImageView
+                            android:id="@+id/btnCalendar"
+                            android:layout_width="0dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_weight="3"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/calendar" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/btnSetting"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/icons8_settings1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvDescriptionGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/content_demo"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvAvtMember1"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_35"
+                android:background="@drawable/bg_circle_icon"
+                android:elevation="@dimen/dp_1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvAvtMember2"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/bg_circle_icon"
+                android:elevation="@dimen/dp_1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvAvtMember3"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_80"
+                android:background="@drawable/bg_circle_icon"
+                android:elevation="@dimen/dp_1" />
+
+            <TextView
+                android:id="@+id/imvAvtMember4"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_120"
+                android:background="@drawable/bg_circle_icon"
+                android:elevation="@dimen/dp_1"
+                android:gravity="center"
+                android:text="+4"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addMember"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_160"
+                android:background="@drawable/bg_circle_icon"
+                android:elevation="@dimen/dp_1"
+                android:gravity="center"
+                android:text="+Add"
+                android:textSize="@dimen/sp_16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_Group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:background="@drawable/tech">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleListConten"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnCreateContent"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/dp_40"
+        android:visibility="gone"
+        android:elevation="@dimen/dp_5"
+        android:src="@drawable/add_ip" />
+</FrameLayout>

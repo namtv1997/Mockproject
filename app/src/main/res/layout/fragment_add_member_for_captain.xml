@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupFragment.AddMemberForCaptainFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="@color/blue_hope"
+        android:weightSum="15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageButton
+            android:id="@+id/btnBack"
+           android:layout_margin="@dimen/dp_16"
+            android:src="@drawable/icon_back"
+            android:background="@color/blue_hope"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add member"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="@dimen/dp_5"
+        android:layout_weight="1"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="name"
+            android:id="@+id/edtSearchMember"
+            android:background="@drawable/bg_stroke_hope"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="6.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+        <ImageView
+            android:id="@+id/btnSearchMember"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@color/end_blue_color"
+            android:src="@drawable/search_ip"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="8"
+        android:id="@+id/listMemberSearch"
+        android:background="@drawable/bg_stroke_hope"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>

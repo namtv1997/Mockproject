@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background_create_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_background_create_content"
+        android:orientation="vertical"
+        tools:context=".Sprin7.SettingFragment">
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_title" />
+
+        <EditText
+            android:layout_margin="@dimen/dp_8"
+            android:id="@+id/edt_setting_title"
+            style="@style/edt_title_create_content"
+            android:drawableRight="@drawable/iconpen"
+            android:hint="@string/title" />
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edt_description" />
+        <EditText
+            android:hint="@string/description"
+            android:id="@+id/edt_edit_description"
+            style="@style/edt_description_create_content" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_banner" />
+        <ImageView
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:id="@+id/imgChangeBanner"
+            android:layout_margin="@dimen/dp_8"
+            android:background="#FFFFFF"
+            android:src="@drawable/icons_plus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100" />
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edt_avatar_course" />
+        <ImageView
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:id="@+id/imgChangeCourse"
+            android:layout_margin="@dimen/dp_8"
+            android:background="#FFFFFF"
+            android:src="@drawable/icons_plus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelSetting"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnOkSetting"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue_hope"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

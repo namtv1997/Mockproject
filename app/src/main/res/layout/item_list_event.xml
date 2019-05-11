@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:layout_margin="@dimen/dp_5"
+    android:orientation="horizontal"
+    android:id="@+id/itemListEvent">
+
+    <TextView
+        android:id="@+id/tvAvtEvent"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/blue_hope"
+        android:gravity="center"
+        android:text="@string/a"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_30" />
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@drawable/bg_stroke_hope"
+            android:id="@+id/tvTitleEvent"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/vietNamVoiDich"
+            android:textSize="@dimen/sp_18"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dp_5"
+            android:id="@+id/tvDateEvent"
+            android:gravity="left"
+            android:text="2019/01/02"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+</LinearLayout>
